@@ -1,23 +1,23 @@
 .navbar_list{
     list-style:none;
-    background-color:#BAD7E9;
+    background-color:peachpuff;
     display:flex;
     justify-content: flex-end;
     list-style:none;
     width:100%;
+    border: 1px solid #EB455F ;
 
     
 }
 .navbar_item {
     align-self:flex-end;
-   
-   
+    
 
 }
 
 .navbar_link {
     all:unset;
-    color:#FCFFE7;
+    color:#EB455F;
     font-family:'Space Mono', monospace;
     display:flex;
     flex-direction:column;
@@ -31,6 +31,7 @@
 .navbar_item:hover{
     cursor:pointer;
     transition: 200ms ease;
-    background-color: #EB455F;
-    color: #FCFFE7;
+    background-color:#fff;
+   
+
 }

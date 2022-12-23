@@ -1,5 +1,7 @@
 html {
+  box-sizing:border-box;
+  padding:0;
+  margin-top:0;
   font-family: 'Space Mono', monospace;
   color: #2B3467;
 }
-

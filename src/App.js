@@ -1,4 +1,4 @@
-import {Route, Routes, Navigate} from 'react-router-dom'
+import {Route, Routes,Redirect} from 'react-router-dom';
 import { Fragment } from 'react';
 import NotesPage from './Pages/NotesPage';
 import ListsPage from './Pages/ListsPage';

@@ -1,9 +1,9 @@
 import React, {useState} from 'react';
 import {NavLink} from 'react-router-dom'
 import './Navbar.css';
-import tree from './Icons/tree_light.png';
-import maple from './Icons/maple.png';
-import plant from './Icons/plant.png';
+import tree from './Icons/icons8-moon-and-stars-48.png'
+import maple from './Icons/icons8-sparkling-48.png';
+import plant from './Icons/icons8-summer-48.png';
 
 const Navbar = () => {
 
