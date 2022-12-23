@@ -1,0 +1,36 @@
+.navbar_list{
+    list-style:none;
+    background-color:#BAD7E9;
+    display:flex;
+    justify-content: flex-end;
+    list-style:none;
+    width:100%;
+
+    
+}
+.navbar_item {
+    align-self:flex-end;
+   
+   
+
+}
+
+.navbar_link {
+    all:unset;
+    color:#FCFFE7;
+    font-family:'Space Mono', monospace;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    padding:1rem;
+    margin:0;
+}
+.navbar_icon {
+    width:3rem;
+}
+.navbar_item:hover{
+    cursor:pointer;
+    transition: 200ms ease;
+    background-color: #EB455F;
+    color: #FCFFE7;
+}

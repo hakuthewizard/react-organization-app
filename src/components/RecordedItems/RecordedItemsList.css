@@ -1,0 +1,12 @@
+.itemslist {
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    justify-content: center;
+    align-items: center;
+    overflow:hidden;
+    padding:1rem;
+    list-style: none;
+    width: 100%;
+
+}

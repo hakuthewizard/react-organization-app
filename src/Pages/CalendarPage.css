@@ -1,0 +1,21 @@
+.app {
+    width:100vw;
+}
+ button {
+    all:unset;
+    color:#EB455F;
+    text-align:center;
+}
+.app>button:hover{
+    cursor:pointer;
+    transition: 200ms ease;
+    background-color:#2B3467;
+    border-radius:1rem;
+    transition:200ms ease;
+}
+.react-calendar__tile{
+    color: #EB455F;
+    border-radius: 6px;
+    font-weight: bold;
+
+  }

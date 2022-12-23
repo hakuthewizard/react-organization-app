@@ -1,0 +1,35 @@
+.goal-item {
+  display:flex;
+  flex-direction: column;
+  margin: 1rem 0;
+  background: #BAD7E9;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  color: #2B3467;
+  padding: 1rem 2rem;
+  font-size:1.5rem;
+  cursor: pointer;
+  border-radius:1rem;
+  transition:200ms ease;
+}
+.delete_button {
+  align-self: flex-end;
+  font: inherit;
+  padding: 0.5rem 1.5rem;
+  border-radius: 2rem;
+  background: #EB455F;
+  cursor: pointer;
+  border:none;
+}
+.delete_button {
+  input[type=checkbox] {
+    border-radius: 4px;
+    background: #ff0000;
+    width:100px;
+}
+}
+.delete_button:hover,
+.delete_button:active {
+  background: #F28494;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.26);
+  transition: 200ms ease;
+}
