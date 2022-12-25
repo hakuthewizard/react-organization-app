@@ -34,8 +34,8 @@ const Navbar = () => {
                 <NavLink style={{color: 'inherit', textDecoration: 'none' }}
                 to="calendar">
                 <a className='navbar_link' href='#'>
-                <img className="navbar_icon" src={plant}/>
-                <span className='navbar_itemtitle'>Calendar</span>
+                <img className="navbar_icon calendaricon" src={plant}/>
+                <span className='navbar_itemtitle'>Set Reminder</span>
                 </a>
                 </NavLink>
             </li>

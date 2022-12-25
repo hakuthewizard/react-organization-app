@@ -1,14 +1,14 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState} from 'react';
 import './UserInputForm.css'
 
 const UserInputForm = (props) => {
-
+    
     const [enteredTitle, setEnteredTitle] = useState('');
     const [enteredNoteContent, setEnteredNoteContent] = useState('');
-   
-   
+
     const enteredTitleHandler = (event) => {
         setEnteredTitle(event.target.value);
+
     }
     const enteredNoteContentHandler = (event) => {
         setEnteredNoteContent(event.target.value);
@@ -16,7 +16,7 @@ const UserInputForm = (props) => {
     
     const formSubmitHandler = (event) => {
         event.preventDefault();
-
+        
     const noteData = {
         title: enteredTitle,
         noteContent: enteredNoteContent,
@@ -26,6 +26,7 @@ const UserInputForm = (props) => {
       setEnteredNoteContent('');
 
     
+   
     }
     
     return(

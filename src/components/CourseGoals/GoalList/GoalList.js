@@ -5,6 +5,7 @@ import './GoalList.css';
 
 const GoalList = props => {
   return (
+    
     <ul className="goal-list">
       {props.items.map(goal => (
         <GoalItem

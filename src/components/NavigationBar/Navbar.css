@@ -27,6 +27,8 @@
 }
 .navbar_icon {
     width:3rem;
+    height:auto;
+    justify-self:center;
 }
 .navbar_item:hover{
     cursor:pointer;
@@ -34,4 +36,7 @@
     background-color:#fff;
    
 
+}
+.navbar_itemtitle {
+    text-align:center;
 }
