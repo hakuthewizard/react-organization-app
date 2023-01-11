@@ -5,25 +5,20 @@ import GoalInput from '../components/CourseGoals/GoalInput/GoalInput';
 import './ListsPage.css'
 
 const ListsPage = () => {
-  const [courseGoals, setCourseGoals] = useState([
-  ]);
+  const [courseGoals, setCourseGoals] = useState([]);
   useEffect(() => {
     const storedGoals = localStorage.getItem('goals')
-    const goalsArray = JSON.parse(storedGoals);
-    setCourseGoals(goalsArray)
+    if (storedGoals) {
+        const goalsArray = JSON.parse(storedGoals);
+        setCourseGoals(goalsArray)
+    }
    }, []);
- 
-   const saveGoalsToLocalStorage = (goals)=> {
-     localStorage.setItem('goals',JSON.stringify(goals))
-   }
+
   const addGoalHandler = enteredText => {
+    if (!enteredText) return;
     setCourseGoals(prevGoals => {
-      if(!prevGoals){
-        return[enteredText]
-      }
-      const updatedGoals = [...prevGoals];
-      updatedGoals.unshift({ text: enteredText, id: Math.random().toString() });
-      saveGoalsToLocalStorage(updatedGoals)
+      const updatedGoals = [{ text: enteredText, id: Math.random().toString() }, ...prevGoals];
+      localStorage.setItem('goals', JSON.stringify(updatedGoals));
       return updatedGoals;
     });
   };
@@ -31,6 +26,7 @@ const ListsPage = () => {
   const deleteItemHandler = goalId => {
     setCourseGoals(prevGoals => {
       const updatedGoals = prevGoals.filter(goal => goal.id !== goalId);
+      localStorage.setItem('goals', JSON.stringify(updatedGoals));
       return updatedGoals;
     });
   };
@@ -51,7 +47,6 @@ const ListsPage = () => {
       </section>
       <section id="goals">
         {content}
-  
       </section>
        
     </div>

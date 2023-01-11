@@ -9,8 +9,8 @@ const GoalList = props => {
     <ul className="goal-list">
       {props.items.map(goal => (
         <GoalItem
-          key={goal.id}
-          id={goal.id}
+          key={Math.random().toString()}
+          id={goal.id} 
           onDelete={props.onDeleteItem}
         >
           {goal.text}
