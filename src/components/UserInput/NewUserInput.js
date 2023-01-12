@@ -1,18 +1,20 @@
 import React from 'react';
 import UserInputForm from './UserInputForm';
+import { v4 as uuidv4 } from 'uuid';
 
 
 const NewUserInput= (props) =>  {
 
 
-const saveNoteDataHandler = (enteredNoteData) => {
-    const noteData = {
-        ...enteredNoteData,
-        id: Math.random().toString()
-    }
-    props.onAddNote(noteData);
-    console.log(noteData);
+    const saveNoteDataHandler = (enteredNoteData) => {
+        const noteData = {
+            ...enteredNoteData,
+            id: Math.random().toString()
 
+        }
+        props.onAddNote(noteData);
+    
+    
 }
 return(
 <UserInputForm 

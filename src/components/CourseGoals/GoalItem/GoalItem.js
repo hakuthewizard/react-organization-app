@@ -1,7 +1,7 @@
 import React from 'react';
 
 import './GoalItem.css';
-
+import done from './done.png'
 const GoalItem = props => {
   // const [deleteText, setDeleteText] = useState('');
 
@@ -13,8 +13,8 @@ const GoalItem = props => {
   return (
     <li className="goal-item" onClick={deleteHandler}>
       {props.children}
-      <input type="checkbox"
       
+      <img src={done}
       className='delete_button'/>
     </li>
   );

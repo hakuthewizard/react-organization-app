@@ -5,31 +5,25 @@
  background-color:peachpuff;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
   color:#EB455F;
-  padding: 1rem 2rem;
-  font-size:1.5rem;
+  padding:0.5rem;
+  font-size:1.2rem;
   cursor: pointer;
   border-radius:1rem;
   transition:200ms ease;
 }
 .delete_button {
   align-self: flex-end;
-  font: inherit;
-  padding: 0.5rem 1.5rem;
-  border-radius: 2rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
   background: #EB455F;
   cursor: pointer;
-  border:none;
+  height:3rem;
 }
-.delete_button {
-  input[type=checkbox] {
-    border-radius: 4px;
-    background: #ff0000;
-    width:100px;
-}
-}
+
 .delete_button:hover,
 .delete_button:active {
   background: #F28494;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.26);
   transition: 200ms ease;
+  opacity:0.7;
 }

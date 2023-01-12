@@ -2,7 +2,7 @@ import {Route, Routes} from 'react-router-dom';
 import NotesPage from './Pages/NotesPage';
 import ListsPage from './Pages/ListsPage';
 import Navbar from './components/NavigationBar/Navbar';
-import EditableCalendar from './Pages/CalendarPage';
+import CalendarPage from './Pages/CalendarPage';
 import Welcome from './Pages/Welcome'
 import './App.css';
 
@@ -18,7 +18,7 @@ function App() {
             <Route path="/notes" element={<NotesPage />} exact/>
                 
             <Route path="/lists" element={<ListsPage />}/>
-            <Route path="/calendar" element={<EditableCalendar />}/>
+            <Route path="/calendar" element={<CalendarPage />}/>
         </Routes>
         </main>
         </div>
