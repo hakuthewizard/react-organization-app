@@ -1,32 +1,35 @@
 import React, {useState} from 'react';
 import './UserInputForm.css'
-
+import DOMPurify from 'dompurify';
 const UserInputForm = (props) => {
     
     const [enteredTitle, setEnteredTitle] = useState('');
     const [enteredNoteContent, setEnteredNoteContent] = useState('');
 
     const enteredTitleHandler = (event) => {
-        setEnteredTitle(event.target.value);
-
+        const sanitizedTitle = DOMPurify.sanitize(event.target.value);
+        setEnteredTitle(sanitizedTitle);
     }
+    
     const enteredNoteContentHandler = (event) => {
-        setEnteredNoteContent(event.target.value);
+        const sanitizedNoteContent = DOMPurify.sanitize(event.target.value);
+        setEnteredNoteContent(sanitizedNoteContent);
     }
+    
     
     const formSubmitHandler = (event) => {
         event.preventDefault();
-        
-    const noteData = {
-        title: enteredTitle,
-        noteContent: enteredNoteContent,
-      } 
-      props.onSaveNoteData(noteData);
-      setEnteredTitle('');
-      setEnteredNoteContent('');
-
+        // Sanitize user input
+        const sanitizedTitle = DOMPurify.sanitize(enteredTitle);
+        const sanitizedNoteContent = DOMPurify.sanitize(enteredNoteContent);
     
-   
+        const noteData = {
+            title: sanitizedTitle,
+            noteContent: sanitizedNoteContent,
+          } 
+          props.onSaveNoteData(noteData);
+          setEnteredTitle('');
+          setEnteredNoteContent('');
     }
     
     return(

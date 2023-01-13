@@ -40,3 +40,14 @@
 .navbar_itemtitle {
     text-align:center;
 }
+@media screen and (max-width: 768px) {
+    .navbar_list {
+        display:flex;
+        width:100%;
+        justify-content:center;
+        align-items:center;
+        text-align:center;
+        
+        padding-inline-start: 0;
+    }
+}

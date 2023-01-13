@@ -7,11 +7,14 @@
     background-color:peachpuff;
     text-align:left;
     border-radius: 2rem;
-    margin:1rem;
+ 
     overflow:visible;
+    margin:1rem;
+ 
 }
 .list_item > h3{
     color: #EB455F;
+    margin:1rem;
 }
 .list_item > span {
     display:flex;
@@ -20,6 +23,7 @@
     font-size: 1rem;
     font-weight: bold;
     overflow:hidden;
+    margin:1rem;
 }
 
 .list_item_delete{
@@ -32,14 +36,18 @@
     margin-bottom:0.5rem;
     padding:0.2rem;
     font-size:0.7rem;
+
 }
 .list_item_delete:hover {
     cursor:pointer;
     background-color: #EF687C;
     transition: 500ms ease-in-out;
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 768px) {
     .list_item {
-      max-width: 75vw;
+        display:flex;
+        width:100%;
+        flex-direction:column;
+
     }
-  }
+}
